@@ -1,0 +1,56 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255,255,255);
+  background: linear-gradient(135deg, rgba(250,250,250,1) 5%, rgb(209, 209, 209) 100%);
+  font-family: 'Manrope';
+}
+
+.clock-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.clock-contents{
+  font-size: 144px;
+  margin-right: 0.6em;
+  text-shadow: 0px 0px 16px rgba(0,0,0,0.5),
+               0px 0px 4px rgba(0,0,0,0.25),
+               0px 0px 8px rgba(0,0,0,0.25),
+               0px 0px 12px rgba(0,0,0,0.25);
+  font-variant-numeric: tabular-nums;
+  color:#fff;
+}
+.clock-am-pm-container{
+  display: flex;
+  flex-direction: column;
+}
+.clock-am-pm-container div{
+  font-size: 72px;
+  text-shadow: 0px 0px 4px rgba(210, 210, 210, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  
+  color: #D2D2D2;
+}
+.clock-am-pm-container div.active{
+  color: #FFF;
+  box-shadow: none;
+  text-shadow: 0px 0px 16px rgba(0,0,0,0.5),
+              0px 0px 4px rgba(0,0,0,0.5);
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+}
